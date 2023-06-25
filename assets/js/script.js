@@ -4,6 +4,8 @@ const inputTime = document.querySelector('#time');
 const total = document.querySelector('.total');
 const buttonCalculate = document.querySelector('.calculate')
 const ctx = document.getElementById('myChart');
+const chartParent = document.querySelector('.plot-chart');
+const imageParent = document.querySelector('.image');
 
 
 const chart = new Chart(ctx, {
@@ -61,6 +63,9 @@ buttonCalculate.addEventListener('click', function () {
     let time = parseInt(inputTime.value);
 
     let amount = calculaJuros(value, fee, time);
+
+    imageParent.style.display = 'none';
+    chartParent.style.display = 'block';
 
     total.innerHTML = `R$ ${amount[0].toFixed(2)}`.replace('.', ',');
 

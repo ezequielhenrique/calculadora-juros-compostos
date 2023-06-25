@@ -107,7 +107,21 @@ h1 {
 
 .chart-container {
     width: 50%;
+    margin: auto;
+}
+
+.plot-chart {
+    display: none;
     height: 350px;
+}
+
+.image {
+    display: block;
+}
+
+.image img {
+    height: 350px;
+    display: block;
     margin: auto;
 }
 
