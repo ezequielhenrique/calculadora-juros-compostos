@@ -7,3 +7,8 @@
 body {
     font-family: var(--font);
 }
+
+.chart-container {
+    width: 400px;
+    height: 300px;
+ }
