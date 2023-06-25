@@ -33,6 +33,7 @@ function updateChartData(chart, label, data) {
     chart.data.datasets.push({
         label: 'Valor',
         data: data,
+        backgroundColor: '#6D28D9',
     })
 
     chart.update();
